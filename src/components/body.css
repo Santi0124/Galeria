@@ -1,0 +1,181 @@
+.contenedorPresentacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #d3e1ea;
+}
+
+.cajaImagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+
+.cajaDescripcion {
+  flex: 1;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  padding: 150px;
+}
+
+.imagen {
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.custom-container {
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px 35px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f0f0f3, #ffffff);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  background-color: #6386ad;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.AboutMe {
+  background-color: #d3e1ea;
+  padding: 50px 50px;
+}
+
+.contenedorPresentacion {
+  gap: 50px;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.cajaImagen {
+  padding: 50px 100px;
+
+}
+
+
+.footer-content {
+  background-color: #4b6182;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .contenedorPresentacion {
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 300px;
+  }
+
+  .imagen {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .cajaDescripcion {
+    padding: 20px;
+  }
+
+  .custom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 40px;
+    min-height: 200px;
+    margin-top: 20px;
+  }
+
+  .AboutMe {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    margin-top: 300px;
+  }
+
+  .cajaDescripcion p {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .social-media{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

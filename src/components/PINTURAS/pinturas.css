@@ -1,0 +1,18 @@
+.viewPinturas{
+  background-color: #d3e1ea;
+  padding: 20px;
+}
+.TitleGallery{
+  display: flex;
+  justify-content: center;
+}
+.Subtittle{
+  display: flex;
+  justify-content: center;
+}
+.Cards{
+    padding: 85px;
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+  }

@@ -1,0 +1,28 @@
+.divButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 15px;
+  gap: 15px;
+}
+
+a{
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .divButton {
+    flex-direction: column;
+  }
+      .buttonGroup {
+        flex-direction: column;
+        text-align: center;
+      }
+}
