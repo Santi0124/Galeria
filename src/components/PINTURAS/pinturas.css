@@ -1,18 +1,30 @@
-.viewPinturas{
+.viewPinturas {
   background-color: #d3e1ea;
   padding: 20px;
 }
-.TitleGallery{
+
+.TitleGallery {
   display: flex;
   justify-content: center;
 }
-.Subtittle{
+
+.Subtittle {
   display: flex;
   justify-content: center;
 }
-.Cards{
-    padding: 85px;
-    display: flex;
-    justify-content: center; 
-    gap: 50px;
+.Cards {
+  padding: 100px;
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px; 
+}
+
+@media (max-width:768px){
+  .Cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 10px 10px 10px;
+    gap: 5px;
+    justify-content: center;
   }
+}

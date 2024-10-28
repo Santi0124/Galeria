@@ -11,10 +11,9 @@ const Pinturas: React.FC = () => {
         Explora la colección de obras maestras de nuestro artista
       </p>
       <div className="Cards">
-      <CardPhotos/>
-      <CardPhotos/>
-      <CardPhotos/>
-      <CardPhotos/>
+        <CardPhotos imagenSrc="Fotoinicial" title={"Javier Martínez"} age={"2020"} />
+        <CardPhotos imagenSrc="Fotoinicial" title={"Javier Martínez"} age={"2020"} />
+
       </div>
     </div>
   )
