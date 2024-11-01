@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'; // Asegúrate de importar solo lo necesario
+import { BrowserRouter, Route, Routes } from 'react-router-dom';  
 import './App.css';
 import Home from './components/Home';
 import Pinturas from './components/PINTURAS/Pinturas';
@@ -11,10 +11,12 @@ function App() {
       <BrowserRouter>
       <Header name={''} />
         <Routes>
+          <Route path="/Home" element={<Home />} />
           <Route path='/' element={<Home />} />
           <Route path="/Pintura" element={<Pinturas />} />
           <Route path="/DecoraciónComercial" element={<Pinturas />} />
           <Route path="/FigurasPersonalizadas" element={<Pinturas />} />
+
         </Routes>
         <Footer/>
       </BrowserRouter>

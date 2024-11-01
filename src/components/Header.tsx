@@ -18,6 +18,7 @@ const Header: React.FC<ButtonProps> = () => {
           <ButtonHeader name="Pintura" link="/Pintura" />
           <ButtonHeader name="Decoración comercial" link="/Decoración_comercial" />
           <ButtonHeader name="Figuras personalizadas" link="/Figuras_personalizadas" />
+          <ButtonHeader name="Home" link="/Home" />
         </div>
       </div>
     </header>

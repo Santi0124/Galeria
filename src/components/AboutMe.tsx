@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import Imagen1 from "../assets/fotosSobreMi/Imagen1.jpg"
 import Imagen2 from "../assets/fotosSobreMi/Imagen2.jpg"
-import Imagen3 from "../assets/fotosSobreMi/Imagen3.jpg"
 import Imagen4 from "../assets/fotosSobreMi/Imagen4.jpg"
- 
+
 
 const AboutMe: React.FC = () => {
-  const [photos, setPhotos] = useState([Imagen4, Imagen2, Imagen3,Imagen1]);
+  const [photos, setPhotos] = useState([Imagen4, Imagen2, Imagen1]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextPhoto = () => {
     setCurrentIndex((prevIndex) => {
       if (prevIndex < photos.length - 1) {
-        return prevIndex + 1; 
+        return prevIndex + 1;
       } else {
         return 0
       }
     })
   };
-  
-  
+
+
   return (
     <div className="AboutMe">
       <div className="contenedorPresentacion">
@@ -31,7 +30,7 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="cajaImagen">
           <img
-            src={photos[currentIndex]} 
+            src={photos[currentIndex]}
             className="imagen"
             width={500}
             height={500}
